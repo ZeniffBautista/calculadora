@@ -23,7 +23,7 @@ def multiplicar(valor1=0,valor2=0):
 def menu():
 	#MENU DE OPCIONES
 	print("** ::::::::::::::::::::::::: **")
-	print(":: Seleccione una operanción ::")
+	print(":: Seleccione una operanción jejetl ::")
 	print("** ::::::::::::::::::::::::: **")
 	print("-------------------------------")
 	print("| Suma:             ->  1     |")
@@ -60,17 +60,17 @@ opc = opciones()
 #MODULO DE SUMA
 if(opc == 1):
 	print("\n")
-	print "** Entrando al modulo de Suma **"
+	print("Modulo suma")
 	valoresTeclado = valores()
 	valor1 = valoresTeclado[0]
 	valor2 = valoresTeclado[1]
 	resultadoSuma = sumar(valor1, valor2)
-	print "El resultado de su suma es: " + str(resultadoSuma)
+	print ("El resultado de su suma es: " + str(resultadoSuma))
 	#print "Quiere realizar otra operanción?.."
 	nuevaOperacion = errorOperacion()
 	#regresar = raw_input("¿Quiere realizar una nueva operanción [Si/No]? ")
 	if(nuevaOperacion == "S" and "s"):
-		print "Muestro el menu"
+		print("Muestro el menu")
 		menuNuevo = menu()
 		opc = opciones()
 		if(opc == 1):
@@ -78,7 +78,7 @@ if(opc == 1):
 			val1Ope = valoreTecladoNuevo[0]
 			val2Ope = valoreTecladoNuevo[1]
 			sumarNuevo = sumar(val1Ope,val2Ope)
-			print "El resultado de su suma es: " + str(sumarNuevo)
+			print ("El resultado de su suma es: " + str(sumarNuevo))
 
 		elif(opc == 2):
 			restarNuevo = restar(valor1,valor2)
@@ -87,11 +87,11 @@ if(opc == 1):
 			multiplicacionNuevo = multiplicar(valor1,valor2)
 
 	if (nuevaOperacion != "N" and "n" and "S" and "s"):
-		print "sali"
+		print ("sali")
 		nuevaOperacion2 = errorOperacion()
 
 		if(nuevaOperacion2 == "S" and "s"):
-			print "Muestro el menu"
+			print ("Muestro el menu")
 			menuNuevo2 = menu()
 			opc2 = opciones()
 
@@ -100,7 +100,7 @@ if(opc == 1):
 				val1Ope2 = valoreTecladoNuevo2[0]
 				val2Ope2 = valoreTecladoNuevo2[1]
 				sumarNuevo2 = sumar(val1Ope2,val2Ope2)
-				print "El resultado de su suma es: " + str(sumarNuevo2)
+				print("El resultado de su suma es: " + str(sumarNuevo2))
 
 			elif(opc == 2):
 				restarNuevo2 = restar(valor1,valor2)
@@ -119,18 +119,18 @@ if(opc == 1):
 #MODULO DE RESTA
 if(opc == 2):
 	print("\n")
-	print "** Entrando al modulo de Resta **"
+	print ("** Entrando al modulo de Resta **")
 	valor1 = int(raw_input("Ingrese su primer valor: "))
 	valor2 = int(raw_input("Ingrese su segundo valor: "))
 	resultadoResta = restar(valor1,valor2)
-	print "El resultado de su resta es: " + str(resultadoResta)
+	print ("El resultado de su resta es: " + str(resultadoResta))
 
 #MODULO DE MULTIPLICACIÓN
 if(opc == 3):
 	print("\n")
-	print "** Entrando al modulo de Multiplicación **"
+	print ("** Entrando al modulo de Multiplicación **")
 	valor1 = int(raw_input("Ingrese su primer valor: "))
 	valor2 = int(raw_input("Ingrese su segundo valor: "))
 	resultadoMultiplicacion = multiplicar(valor1,valor2)
-	print "El resultado de su Multiplicación es: " + str(resultadoMultiplicacion)
+	print ("El resultado de su Multiplicación es: " + str(resultadoMultiplicacion))
 #MODULO DE MULTIPLICACIÓN
